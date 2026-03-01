@@ -1,6 +1,6 @@
 ---
 title: 
-created: {{date}}
+created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 publish_date: 
 status: draft
 domain: 
@@ -13,7 +13,7 @@ collects_24h:
 comments_24h: 
 ---
 
-# {{title}}
+# <% tp.file.cursor() %>
 
 > 📌 生成提示：使用 `prompts/` 目录下的模块逐步填充
 
